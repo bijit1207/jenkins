@@ -1,0 +1,13 @@
+pipeline {
+  agent any
+  tools { 
+        maven 'Maven_3_8_4'  
+    }
+   stages{
+    stage('CompileandRunSonarAnalysis') {
+            steps {	
+		sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=bijit1207_bijit1207 -Dsonar.organization=bijit1207 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=45332fbe8142d43c16c3f2945ca7c6aa9f4f599b'
+			}
+        } 
+  }
+}
