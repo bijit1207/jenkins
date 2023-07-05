@@ -127,6 +127,19 @@
 			<version>1.5.1</version>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>fc9785821b1d-releases</name>
+        <url>https://bijitjfrog1207.com/artifactory/maven</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>fc9785821b1d-snapshots</name>
+        <url>https://bijitjfrog1207.com/artifactory/maven</url>
+    </snapshotRepository>
+</distributionManagement>
 	
 	<build>
 		<plugins>
