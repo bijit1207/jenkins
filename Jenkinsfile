@@ -16,7 +16,7 @@ pipeline {
             steps {
                 rtServer (
                     id: "artifactory",
-                    url: https://rdevsecops64.jfrog.io,
+                    url: "https://rdevsecops64.jfrog.io",
                     credentialsId: admin
                 )
 
