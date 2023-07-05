@@ -128,17 +128,12 @@
 		</dependency>
 	</dependencies>
 
-	<distributionManagement>
+	<<distributionManagement>
     <repository>
         <id>central</id>
-        <name>fc9785821b1d-releases</name>
-        <url>https://bijitjfrog1207.com/artifactory/maven</url>
+        <name>38e4fb1016a1-releases</name>
+        <url>https://bijitjfrog1207.com/artifactory/maven-libs-release</url>
     </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>fc9785821b1d-snapshots</name>
-        <url>https://bijitjfrog1207.com/artifactory/maven</url>
-    </snapshotRepository>
 </distributionManagement>
 	
 	<build>
