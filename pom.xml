@@ -128,14 +128,7 @@
 		</dependency>
 	</dependencies>
 
-	<<distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>38e4fb1016a1-releases</name>
-        <url>https://bijitjfrog1207.com/artifactory/maven-libs-release</url>
-    </repository>
-</distributionManagement>
-	
+
 	<build>
 		<plugins>
 			<plugin>
