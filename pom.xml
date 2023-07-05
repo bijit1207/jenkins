@@ -127,15 +127,26 @@
 			<version>1.5.1</version>
 		</dependency>
 	</dependencies>
-	<distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>38e4fb1016a1-releases</name>
-        <url>https://bijitjfrog1207.com/artifactory/maven-libs-release-local</url>
-    </repository>
-</distributionManagement>
+	
 	<build>
 		<plugins>
+			<plugin>
+      			<groupId>org.jfrog.buildinfo</groupId>
+      			<artifactId>artifactory-maven-plugin</artifactId>
+      			<version>3.6.1</version>
+     			 <executions>
+       			 <execution>          
+          		<configuration>            
+           		 <publisher>
+             	 <contextUrl>https://rdevsecops64.jfrog.io</contextUrl>
+             	 <username>admin</username>
+            	  <password>Admin@1264</password>
+            	  <repoKey>jenkins</repoKey>              
+            	</publisher>
+         		 </configuration>
+        		</execution>
+      		</executions>
+   			 </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
