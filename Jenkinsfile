@@ -11,9 +11,9 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: '*',
-        }
-    }
+            archiveArtifacts artifacts: '*'
+            }
+       }
 }
     
     stage('Publish SonarCloud Logs to Artifactory') {
