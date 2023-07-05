@@ -23,15 +23,15 @@ pipeline {
                 rtMavenDeployer (
                     id: "MAVEN_DEPLOYER",
                     serverId: "artifactory",
-                    releaseRepo: https://rdevsecops64.jfrog.io/artifactory/api/maven/maven-libs-release,
-                    snapshotRepo: https://rdevsecops64.jfrog.io/artifactory/api/maven/maven-libs-snapshot
+                    releaseRepo: "https://rdevsecops64.jfrog.io/artifactory/api/maven/maven-libs-release",
+                    snapshotRepo: "https://rdevsecops64.jfrog.io/artifactory/api/maven/maven-libs-snapshot"
                 )
 
                 rtMavenResolver (
                     id: "MAVEN_RESOLVER",
                     serverId: "artifactory",
-                    releaseRepo: https://rdevsecops64.jfrog.io/artifactory/api/maven/maven-libs-release,
-                    snapshotRepo: https://rdevsecops64.jfrog.io/artifactory/api/maven/maven-libs-snapshot
+                    releaseRepo: "https://rdevsecops64.jfrog.io/artifactory/api/maven/maven-libs-release",
+                    snapshotRepo: "https://rdevsecops64.jfrog.io/artifactory/api/maven/maven-libs-snapshot"
                 )
             }
         }
